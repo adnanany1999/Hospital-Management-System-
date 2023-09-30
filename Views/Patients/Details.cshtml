@@ -1,0 +1,36 @@
+﻿@model Hospital2.Models.Patients.Patient
+
+<h2>Details for @Model.FirstName @Model.LastName</h2>
+
+<div class="patient-details">
+    <h4>Patient Details:</h4>
+    <table class="table table-bordered">
+        <tr>
+            <th>Email:</th>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <th>Phone Number:</th>
+            <td>@Model.PhoneNumber</td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td>@Model.AddressLine1, @Model.AddressLine2, @Model.City, @Model.State, @Model.PostalCode, @Model.Country</td>
+        </tr>
+        <tr>
+            <th>Date of Birth:</th>
+            <td>@Model.DateOfBirth.ToShortDateString()</td>
+        </tr>
+    </table>
+</div>
+
+<div class="actions">
+    <a href="@Url.Action("Edit", "Patients", new { id = Model.PatientId })" class="btn btn-primary">Edit Profile</a>
+    <a href="@Url.Action("Index", "Dashboard")" class="btn btn-secondary">Back to Dashboard</a>
+</div>
+
+<style>
+    .patient-details {
+        margin-bottom: 20px;
+    }
+</style>

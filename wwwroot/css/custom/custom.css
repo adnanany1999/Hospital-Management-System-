@@ -1,0 +1,153 @@
+﻿.btn-agile {
+    background-color: gray; /* Default color */
+    color: white;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+    .btn-agile:hover, .btn-agile:focus, .btn-agile:active {
+        background-color: green; /* Color when hovered, focused, or active */
+            }
+.img1 {
+    background-image: url('/images/g1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+}
+
+.img2 {
+    background-image: url('../../images/g7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img3 {
+    background-image: url('/images/g3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img4 {
+    background-image: url('/images/g4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img5 {
+    background-image: url('/images/g5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img6 {
+    background-image: url('/images/g6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img_text_w3ls {
+    background-color: rgba(255, 255, 255, 0.6); /* white with 60% opacity */
+    padding: 10px;
+    border-radius: 5px;
+}
+    .img_text_w3ls h4,
+    .img_text_w3ls p {
+        color: #333; /* Dark gray color. Adjust as needed. */
+    }
+    .img_text_w3ls h4,
+    .img_text_w3ls p {
+        text-shadow: 2px 2px 4px #000; /* Shadow for the text */
+    }
+
+/* For Appointment page */
+.imgA1 {
+  
+    background-image: url('../../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imgA2 {
+    
+    background-image: url('../../images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* For Appointment page */
+.imgA3 {
+   
+    background-image: url('../../images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imgA4 {
+   
+    background-image: url('../../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* For Appointment page */
+.imgA5 {
+   
+    background-image: url('../../images/g7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imgA6 {
+  
+    background-image: url('../../images/g8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* index page*/
+.imgIndex6 {
+    
+    background-image: url('../../images/g3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.imgIndex5 {
+    
+    background-image: url('../../images/g7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.imgIndex4 {
+    
+    background-image: url('../../images/g9.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.imgIndex3 {
+    
+    background-image: url('../../images/t2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.imgIndex2 {
+    background-image: url('../../images/te3.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.imgIndex1 {
+    background-image: url('../../images/g6.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.my-3 {
+    background-color: rgba(255, 255, 255, 0.6); /* white with 60% opacity */
+}
+body {
+    background-color: #add8e6; /* Light blue color */
+}
+
+/* ... and so on for imgA3, imgA4, ... */
+
+/* ... and so on for imgA3, imgA4, ... */
+
+/* ... and so on for imgA3, imgA4, ... */
+
+
+
+/* ... and so on for other images */

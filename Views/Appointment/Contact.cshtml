@@ -1,0 +1,25 @@
+﻿@model Hospital2.Models.Feedback
+
+<h3>Contact Us</h3>
+<h4>Send us a message</h4>
+
+<form asp-action="SubmitFeedback" method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input asp-for="Name" class="form-control" placeholder="Your Name" />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input asp-for="Email" class="form-control" placeholder="Enter Email ID" />
+    </div>
+    <div class="form-group">
+        <label for="Message">Your Message</label>
+        <textarea asp-for="Message" class="form-control" rows="5" placeholder="Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-danger">Send</button>
+</form>
+
+<!-- Google Maps Embed -->
+<div class="mt-4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.285408306262!2d-73.79364252272829!3d40.71173313762985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26159c5a852f5%3A0xeb432dfd9ccd3792!2sQueens%20Valley%20Pharmacy%20%26%20Supermarket!5e0!3m2!1sen!2sus!4v1695941820297!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

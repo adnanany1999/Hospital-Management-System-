@@ -1,0 +1,44 @@
+﻿@model Hospital2.Models.Patients.Patient
+
+<h2>Welcome, @Model.FirstName @Model.LastName</h2>
+<h4>Patient Dashboard</h4>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="dashboard-content">
+    <div class="patient-details">
+        <h5>Your Details:</h5>
+        <ul>
+            <li><strong>Email:</strong> @Model.Email</li>
+            <li><strong>Phone Number:</strong> @Model.PhoneNumber</li>
+            <li><strong>Address:</strong> @Model.AddressLine1, @Model.AddressLine2, @Model.City, @Model.State, @Model.PostalCode, @Model.Country</li>
+            <li><strong>Date of Birth:</strong> @Model.DateOfBirth.ToShortDateString()</li>
+        </ul>
+    </div>
+    
+    <div class="navigation-links">
+        <h5>Quick Links:</h5>
+        <ul>
+            <li><a href="@Url.Action("Details", "MedicalRecords")">View Medical Records</a></li>
+            <li><a href="@Url.Action("Edit", "Patients", new { id = Model.PatientId })">Update Profile</a></li>
+            <!-- Add other links as necessary -->
+        </ul>
+    </div>
+</div>
+
+<style>
+    .dashboard-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .patient-details, .navigation-links {
+        width: 45%;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
